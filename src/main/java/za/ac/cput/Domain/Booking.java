@@ -1,5 +1,5 @@
 package za.ac.cput.Domain;
-Thando Tinto - 221482210
+//Thando Tinto - 221482210
 import java.time.LocalDate;
 
 public class Booking {
