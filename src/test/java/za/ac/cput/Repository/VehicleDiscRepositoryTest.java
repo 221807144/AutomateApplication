@@ -41,9 +41,10 @@ class VehicleDiscRepositoryTest {
     }
 
     @Test
-    @Disabled
+   @Disabled
     void d_delete() {
-        assertTrue(repository.delete(vehicleDisc.getVehicleDiscID()));
+        repository.delete(vehicleDisc.getVehicleDiscID());  //First delete the Vehicle object
+        assertNull(repository.read(vehicleDisc.getVehicleDiscID()));  // Must pass as it will return a null, as the object has been deleted
         System.out.println("sucessuly deleted a Vehicle");
     }
 
